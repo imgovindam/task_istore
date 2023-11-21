@@ -32,7 +32,7 @@ const Cards = ({ i, addTask }) => {
             />
           </CardHeader>
           <CardBody>
-            <div className="mb-2 p-4 bg-blue-100 flex items-center justify-between">
+            <div className="mb-2 h-20 p-4 bg-blue-100 flex items-center justify-between">
               <Typography color="blue-gray" className="font-medium">
                 {i.title}
               </Typography>
