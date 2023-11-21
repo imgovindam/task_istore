@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import RestoreFromTrashIcon from "@mui/icons-material/RestoreFromTrash";
+import { useNavigate } from "react-router-dom";
+
 const Carts = ({ data, removeData }) => {
   console.log(typeof data);
   // let arr = [1, 2, 3];
@@ -12,10 +14,11 @@ const Carts = ({ data, removeData }) => {
   };
   let a = Math.round(totalAmount());
   console.log(totalAmount());
+  const navigate = useNavigate();
   return (
     <div>
       <div className="mt-4 p-8 my-8 ">
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-4 mx-2 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-4 mx-2 px-4 ">
           {data.map((i, index) => {
             return (
               <div key={i.id} className="flex h-full">
@@ -27,7 +30,7 @@ const Carts = ({ data, removeData }) => {
                   <span className="flex">₹: {i.price}</span>
                   <span className="p-2 m-2">
                     <button
-                      className="p-2 m-2 border bg-red-400 rounded-l-md"
+                      className="p-2 m-2 border bg-gray-200 rounded-l-md"
                       onClick={() => removeData(index)}
                     >
                       <RestoreFromTrashIcon />
@@ -45,9 +48,12 @@ const Carts = ({ data, removeData }) => {
             {/* {totalAmount()} */}
           </div>
           <div className="flex">
-            <button className="px-2 py-2 justify-center w-1/5 rounded-lg text-white font-sans font-semibold bg-blue-400">
+            <button
+              className="px-2 py-2 justify-center w-1/5 rounded-lg text-white font-sans font-semibold bg-blue-400"
+              onClick={() => navigate("/Payment")}
+            >
               {" "}
-              check out{" "}
+              check out
             </button>
           </div>
         </div>

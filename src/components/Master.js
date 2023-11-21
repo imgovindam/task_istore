@@ -47,7 +47,7 @@ const Master = ({ setData, data }) => {
           return (
             <>
               <div key={i.id}>
-                <Cards i={i} addTask={addTask} />{" "}
+                <Cards i={i} addTask={addTask} />
               </div>
             </>
           );

@@ -3,7 +3,12 @@ import React from "react";
 const Payment = () => {
   return (
     <div>
-      <div></div>
+      <div>Paymemt </div>
+      <div>Paymemt </div>
+      <div>Paymemt </div>
+      <div>Paymemt </div>
+      <div>Paymemt </div>
+      <div>Paymemt </div>
     </div>
   );
 };

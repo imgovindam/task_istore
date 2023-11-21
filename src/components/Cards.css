@@ -1,0 +1,15 @@
+.first {
+    background-color: rgb(164, 164, 253);
+    margin-top: 20px;
+    height: 100px;
+    font-size: small;
+    font-family: sans-serif;
+
+}
+
+.sec {
+    cursor: pointer;
+    font-weight: 100;
+    font-family: sans-serif;
+
+}
