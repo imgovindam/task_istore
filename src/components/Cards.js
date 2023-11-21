@@ -77,7 +77,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import "./Cards.css";
+// import "./Cards.css";
 import { useState } from "react";
 // import { useDispatch } from "react-redux";
 // import { addName } from "../redux/dataSlice";
