@@ -1,15 +1,42 @@
-.first {
-    background-color: rgb(164, 164, 253);
-    margin-top: 20px;
-    height: 100px;
-    font-size: small;
-    font-family: sans-serif;
+/* .imageAdjust {
+    width: auto;
+ 
+    height: 40vh;
+    width: 40vw;
+    border-radius: 10%;
+    background-color: aqua;
 
+} */
+
+
+.imageAdjust {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10%;
+    object-fit: cover;
 }
 
-.sec {
-    cursor: pointer;
-    font-weight: 100;
-    font-family: sans-serif;
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    .imageAdjust {
+        height: 30vh;
+        width: 80vw;
+    }
+}
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .imageAdjust {
+        height: 35vh;
+        width: 60vw;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .imageAdjust {
+        height: 40vh;
+        width: 40vw;
+    }
 }

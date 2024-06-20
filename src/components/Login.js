@@ -1,11 +1,6 @@
 import React from "react";
 
-import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
-import Person2Icon from "@mui/icons-material/Person2";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import KeyIcon from "@mui/icons-material/Key";
-
-import Switch from "@mui/material/Switch";
+// import Switch from "@mui/material/Switch";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -29,7 +24,7 @@ const Login = () => {
           type="password"
           placeholder="password/OTP"
         />
-        <Switch /> Remembere me
+        {/* <Switch /> Remembere me */}
         <button
           className="bg-blue-400 w-full hover:text-blue-500 hover:bg-blue-200 text-white px-2 py-2 m-2 rounded-lg font-sans font-semibold"
           onClick={() => navigate("/Home")}

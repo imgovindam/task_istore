@@ -65,6 +65,8 @@ import Navbar from "./components/Navbar";
 import { useDispatch, useSelector } from "react-redux";
 import { addName } from "./redux/dataSlice";
 import Login from "./components/Login";
+import Description from "./components/Description";
+import Payment from "./components/Payment";
 
 function App() {
   // ************for loading of pages
@@ -113,6 +115,8 @@ function App() {
                 path="/Carts"
                 element={<Carts data={data} removeData={removeData} />}
               />
+              <Route path="/description/:id" element={<Description />} />
+              <Route path="/payment" element={<Payment />} />
             </Routes>
           </BrowserRouter>
         </div>
